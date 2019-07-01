@@ -25,7 +25,7 @@
 	<classpathentry kind="lib" path="E:/Software file/All jar/poi-bin-4.1.0-20190412/poi-4.1.0/poi-scratchpad-4.1.0.jar"/>
 	<classpathentry kind="lib" path="E:/Software file/All jar/poi-bin-4.1.0-20190412/poi-4.1.0/ooxml-lib/curvesapi-1.06.jar"/>
 	<classpathentry kind="lib" path="E:/Software file/All jar/poi-bin-4.1.0-20190412/poi-4.1.0/ooxml-lib/xmlbeans-3.1.0.jar"/>
-	<classpathentry kind="lib" path="E:/Software file/All jar/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="E:/Software file/All jar/selenium-java-3.141.59/client-combined-3.141.59.jar" sourcepath="E:/Software file/All jar/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="E:/Software file/All jar/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="E:/Software file/All jar/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
 	<classpathentry kind="lib" path="E:/Software file/All jar/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
@@ -52,5 +52,6 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="/FrontAccounting"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

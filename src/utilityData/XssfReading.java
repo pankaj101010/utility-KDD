@@ -46,9 +46,7 @@ public class XssfReading {
 	public void selectSheet(String sheetNameOrIndex) {
 		if (isNumeric(sheetNameOrIndex)) {
 			this.sheet = workbook.getSheetAt(Integer.parseInt(sheetNameOrIndex));
-		} else {
-			this.sheet = workbook.getSheet(sheetNameOrIndex);
-		}
+		} else { }
 	}
 
 	public int rowCount() {

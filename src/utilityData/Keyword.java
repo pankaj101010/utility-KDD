@@ -1,6 +1,5 @@
 package utilityData;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -9,16 +8,12 @@ import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,6 +28,7 @@ import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class Keyword {
+	
 	
 	static String DateAndTime = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
 	/**
@@ -232,7 +228,7 @@ public class Keyword {
 	 */
 	public static void takeScreenShot() {
 		AShot shot = new AShot();
-		Date date = new Date();
+		//Date date = new Date();
 		//SimpleDateFormat Format = new SimpleDateFormat("E, dd MMM yyyy, HH_mm_ss");
 		//String DateFormat = Format.format(date);
 		Constants.sceenshot = shot.shootingStrategy(ShootingStrategies.viewportPasting(1000))
@@ -400,7 +396,7 @@ public class Keyword {
 	 * 
 	 * @return
 	 */
-	public static boolean isAlertPresent() {
+	private static boolean isAlertPresent() {
 		try {
 			Constants.driver.switchTo().alert();
 
@@ -440,6 +436,7 @@ public class Keyword {
 		alert.accept();
 
 	}
+/*	
 	public void elementScreenShot(String locatorType, String locator ) {
 		getData(locatorType, locator);
 		Point point = Constants.element.getLocation();
@@ -456,4 +453,5 @@ public class Keyword {
 			System.out.println("File Not found: ");
 		}
 	}
+	*/
 }

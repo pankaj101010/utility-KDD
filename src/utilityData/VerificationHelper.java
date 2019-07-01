@@ -3,9 +3,11 @@ package utilityData;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 
+import com.test.testutils.LoggerHelper;
+
 public class VerificationHelper {
 
-	//private static final Logger log = LoggerHelper.getLogger(VerificationHelper.class);
+	private static final Logger log = LoggerHelper.getLogger(VerificationHelper.class);
 
 	public static synchronized boolean verifyElementPresent(WebElement element) {
 		boolean isDispalyed = false;

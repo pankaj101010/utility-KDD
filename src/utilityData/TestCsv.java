@@ -10,6 +10,12 @@ public class TestCsv {
 	@Test
 	public static void main() throws IOException {
 		Readingcsv reader=new Readingcsv("C:\\Users\\PANKAJ\\Desktop\\dummy.csv");
-		reader.getDataFromCSV();
+		System.out.println(reader.rowCount());
+		System.out.println(reader.coloumnCount());
+  for ( Object[] s: reader.getDataFromCSV()) {
+	System.out.println(s[0]);
+	System.out.println(s[1]);
+}
+		//System.out.println(reader.getDataFromCSV());
 	}
 }
